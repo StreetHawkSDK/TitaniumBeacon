@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.7.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: StreetHawk's Beacon Module lets you to run campaigns based on user's presence inside a beacon's region.
+author: StreetHawk
+license: Apache Public License
+copyright: 2016 StreetHawk
+
+# these should not be edited
+name: Beacons
+moduleid: com.streethawk.shbeacon
+guid: ea97af8e-fb9d-4fa7-a392-74bc99cdab87
+platform: iphone
+minsdk: 5.0.0.GA

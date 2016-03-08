@@ -1,0 +1,52 @@
+<h1>Beacons Module</h1>
+<h2>Description</h2>
+<p>StreetHawk's Beacon module lets you to run campaigns based on user's presence inside a beacon's region. </p>
+<h2>Accessing the Beacons Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var shBeacon = require("com.streethawk.Beacons");
+</code></pre>
+<p>The shBeacon variable is a reference to the Module object.</p>
+<h2>Reference</h2>
+<p>https://streethawk.freshdesk.com/solution/articles/12000000943-beacon</p>
+<h3>beacons.function</h3>
+<ul>
+<li>
+<p>Enter beacon</p>
+<p>shBeacon.shEnterBeacon();</p>
+</li>
+<li>
+<p>Exit beacon</p>
+<p>shBeacon.shExitBeacon();</p>
+</li>
+</ul>
+<h3>beacons.property</h3>
+<ul>
+<li>
+<p>Set or get enable location by default</p>
+<p>shBeacon.defaultLocationService = false;
+var isEnabledByDefault = shBeacon.defaultLocationService;</p>
+</li>
+<li>
+<p>Set or get currently enable location</p>
+<p>shBeacon.locationEnabled  = true;
+var isEnabled = shBeacon.locationEnabled;</p>
+</li>
+</ul>
+<h2>Usage</h2>
+<ul>
+<li>Delay asking for Permission</li>
+</ul>
+<p>By default StreetHawk library request location permission when call "streethawkinit". In case you may wish to delay asking the user for location permission, you can add the code be as shown below.</p>
+<pre><code>var shBeacon = require('com.streethawk.Beacons');
+//optional to delay ask for permission
+shBeacon.defaultLocationService = false;
+//do streethawkinit and other things.
+function buttonLocationEnableClicked(e) {
+    //Enable location
+    shBeacon.locationEnabled = true;
+}
+</code></pre>
+<h2>Author</h2>
+<p>support@streethawk.com</p>
+<h2>License</h2>
+<p>Apache</p>

@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.7.0
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: beacon
+author: StreetHawk
+license: Specify your license
+copyright: Copyright (c) 2016 by Your Company
+
+# these should not be edited
+name: beacon
+moduleid: com.streethawk.shbeacon
+guid: 678df671-6929-4541-955b-20a2b991b07b
+platform: android
+minsdk: 5.2.0.GA
